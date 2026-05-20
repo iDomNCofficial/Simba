@@ -1,0 +1,5 @@
+{
+  "name": "SimBa",
+  "render_readme": true,
+  "domains": ["sensor", "switch"]
+}

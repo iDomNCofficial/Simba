@@ -1,0 +1,67 @@
+{
+  "title": "SimBa",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurer SimBa",
+        "description": "SimBa simule une batterie a partir d'une puissance reseau instantanee.",
+        "data": {
+          "name": "Nom",
+          "source_entity": "Capteur de puissance nette",
+          "power_sign": "Convention du signe",
+          "capacity_kwh": "Taille de la batterie",
+          "charge_efficiency": "Efficacite en charge",
+          "discharge_efficiency": "Efficacite en decharge",
+          "max_charge_kw": "Puissance max en charge",
+          "max_discharge_kw": "Puissance max en decharge",
+          "initial_soc_percent": "Charge initiale",
+          "min_soc_percent": "Charge minimale",
+          "max_soc_percent": "Charge maximale",
+          "update_interval": "Frequence de calcul",
+          "max_dt_seconds": "Duree maximale integree"
+        }
+      }
+    },
+    "error": {
+      "invalid_soc_limits": "La charge minimale doit etre inferieure ou egale a la charge maximale.",
+      "invalid_initial_soc": "La charge initiale doit etre comprise entre la charge minimale et maximale.",
+      "invalid_efficiency": "Les efficacites doivent etre superieures a 0."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options SimBa",
+        "description": "Modifier les parametres de simulation. Le dernier etat de charge restaure reste conserve.",
+        "data": {
+          "name": "Nom",
+          "source_entity": "Capteur de puissance nette",
+          "power_sign": "Convention du signe",
+          "capacity_kwh": "Taille de la batterie",
+          "charge_efficiency": "Efficacite en charge",
+          "discharge_efficiency": "Efficacite en decharge",
+          "max_charge_kw": "Puissance max en charge",
+          "max_discharge_kw": "Puissance max en decharge",
+          "initial_soc_percent": "Charge initiale",
+          "min_soc_percent": "Charge minimale",
+          "max_soc_percent": "Charge maximale",
+          "update_interval": "Frequence de calcul",
+          "max_dt_seconds": "Duree maximale integree"
+        }
+      }
+    },
+    "error": {
+      "invalid_soc_limits": "La charge minimale doit etre inferieure ou egale a la charge maximale.",
+      "invalid_initial_soc": "La charge initiale doit etre comprise entre la charge minimale et maximale.",
+      "invalid_efficiency": "Les efficacites doivent etre superieures a 0."
+    }
+  },
+  "selector": {
+    "power_sign": {
+      "options": {
+        "positive_import": "Positif = import, negatif = export",
+        "positive_export": "Positif = export, negatif = import"
+      }
+    }
+  }
+}

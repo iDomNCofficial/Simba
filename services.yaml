@@ -1,0 +1,38 @@
+set_soc:
+  name: Set state of charge
+  description: Set the simulated battery state of charge by percent or kWh.
+  fields:
+    config_entry_id:
+      name: Config entry ID
+      description: Optional SimBa config entry ID. If omitted, all SimBa entries are updated.
+      selector:
+        text:
+    charge_percent:
+      name: Charge percent
+      description: State of charge in percent.
+      selector:
+        number:
+          min: 0
+          max: 100
+          step: 1
+          unit_of_measurement: "%"
+          mode: box
+    charge_kwh:
+      name: Charge kWh
+      description: Stored battery energy in kWh.
+      selector:
+        number:
+          min: 0
+          step: 0.1
+          unit_of_measurement: kWh
+          mode: box
+
+reset_energy_counters:
+  name: Reset energy counters
+  description: Reset simulated import and export energy counters.
+  fields:
+    config_entry_id:
+      name: Config entry ID
+      description: Optional SimBa config entry ID. If omitted, all SimBa entries are reset.
+      selector:
+        text:

@@ -1,0 +1,67 @@
+{
+  "title": "SimBa",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up SimBa",
+        "description": "SimBa simulates a battery from an instantaneous net grid power sensor.",
+        "data": {
+          "name": "Name",
+          "source_entity": "Net power sensor",
+          "power_sign": "Power sign convention",
+          "capacity_kwh": "Battery size",
+          "charge_efficiency": "Charge efficiency",
+          "discharge_efficiency": "Discharge efficiency",
+          "max_charge_kw": "Maximum charge power",
+          "max_discharge_kw": "Maximum discharge power",
+          "initial_soc_percent": "Initial charge",
+          "min_soc_percent": "Minimum charge",
+          "max_soc_percent": "Maximum charge",
+          "update_interval": "Update interval",
+          "max_dt_seconds": "Maximum integrated duration"
+        }
+      }
+    },
+    "error": {
+      "invalid_soc_limits": "Minimum charge must be lower than or equal to maximum charge.",
+      "invalid_initial_soc": "Initial charge must be between minimum and maximum charge.",
+      "invalid_efficiency": "Efficiencies must be greater than 0."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "SimBa options",
+        "description": "Adjust simulation settings. The restored state of charge is preserved.",
+        "data": {
+          "name": "Name",
+          "source_entity": "Net power sensor",
+          "power_sign": "Power sign convention",
+          "capacity_kwh": "Battery size",
+          "charge_efficiency": "Charge efficiency",
+          "discharge_efficiency": "Discharge efficiency",
+          "max_charge_kw": "Maximum charge power",
+          "max_discharge_kw": "Maximum discharge power",
+          "initial_soc_percent": "Initial charge",
+          "min_soc_percent": "Minimum charge",
+          "max_soc_percent": "Maximum charge",
+          "update_interval": "Update interval",
+          "max_dt_seconds": "Maximum integrated duration"
+        }
+      }
+    },
+    "error": {
+      "invalid_soc_limits": "Minimum charge must be lower than or equal to maximum charge.",
+      "invalid_initial_soc": "Initial charge must be between minimum and maximum charge.",
+      "invalid_efficiency": "Efficiencies must be greater than 0."
+    }
+  },
+  "selector": {
+    "power_sign": {
+      "options": {
+        "positive_import": "Positive = import, negative = export",
+        "positive_export": "Positive = export, negative = import"
+      }
+    }
+  }
+}
