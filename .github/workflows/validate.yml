@@ -32,3 +32,4 @@ jobs:
 
       - name: Validate with Hassfest
         uses: home-assistant/actions/hassfest@master
+        
