@@ -1,10 +1,12 @@
 {
   "domain": "simba",
   "name": "SimBa",
-  "codeowners": [],
+  "codeowners": ["@iDomNCofficial"],
   "config_flow": true,
-  "documentation": "https://github.com/aurelien/simba",
+  "documentation": "https://github.com/iDomNCofficial/Simba",
+  "issue_tracker": "https://github.com/iDomNCofficial/Simba/issues",
   "iot_class": "local_polling",
+  "integration_type": "helper",
   "requirements": [],
   "version": "0.1.0"
 }
