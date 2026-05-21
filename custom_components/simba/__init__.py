@@ -2,6 +2,11 @@
 
 from __future__ import annotations
 
+from .const import DOMAIN
+from homeassistant.helpers import config_validation as cv
+
+CONFIG_SCHEMA = cv.empty_config_schema(DOMAIN)
+
 import logging
 
 import voluptuous as vol
